@@ -1,0 +1,65 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <h2>This is Details of each posts(Individual Posts)</h2>
+    <h3>{{posts.title}}</h3>
+    <h4>{{posts.content}}</h4>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+        h2 {
+            color: #FF8C00;
+            text-align: center;
+        }
+        .post-title {
+            color: #6A0DAD; /* Deep purple for title */
+            margin: 0;
+        }
+        .post-content {
+            color: #555; /* Dark gray for content */
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is Details of the Post You Selected</h2>
+        <h3 class="post-title">Title:{{posts.title}}</h3>
+        <h4 class="post-content">Contents:{{posts.content}}</h4>
+    </div>
+</body>
+</html>
